@@ -4,6 +4,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const siteUrl = process.env.SITE_URL ?? 'https://sigama.aged.ma.gov.br';
+const baseUrl = process.env.BASE_URL ?? '/tutoriais/';
+
 const config: Config = {
   title: 'SIGAMA',
   tagline: 'Tutoriais do Sistema de Gestão Agropecuária do Maranhão',
@@ -14,8 +17,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://sigama.aged.ma.gov.br',
-  baseUrl: '/tutoriais/',
+  url: siteUrl,
+  baseUrl,
 
   organizationName: 'aged-ma',
   projectName: 'sigama-tutoriais',
