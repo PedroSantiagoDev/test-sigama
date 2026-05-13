@@ -1,41 +1,38 @@
-# Website
+# SIGAMA Tutoriais
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Site de tutoriais do **SIGAMA - Sistema de Gestão Agropecuária do Maranhão**, desenvolvido com [Docusaurus](https://docusaurus.io/).
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+## Instalação
 
 ```bash
-yarn start
+npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Desenvolvimento local
+
+```bash
+npm run start
+```
+
+Inicia o servidor local de desenvolvimento.
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Gera os arquivos estáticos no diretório `build`.
 
-## Deployment
-
-Using SSH:
+## Checagem de tipos
 
 ```bash
-USE_SSH=true yarn deploy
+npm run typecheck
 ```
 
-Not using SSH:
+## Estrutura principal
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- `docs/`: tutoriais publicados no site.
+- `docs/tutorial-basics/`: primeiros passos e acesso ao sistema.
+- `docs/tutorial-extras/`: funcionalidades do SIGAMA.
+- `references/`: PDFs usados como base para criação dos tutoriais.
