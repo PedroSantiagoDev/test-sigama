@@ -43,16 +43,16 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.svg',
+    // image: 'img/logo.svg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'SIGAMA',
-      logo: {
-        alt: 'Logo SIGAMA',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Logo SIGAMA',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           type: 'docSidebar',
